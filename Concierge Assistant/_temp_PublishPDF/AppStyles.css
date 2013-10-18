@@ -1,0 +1,99 @@
+
+
+.conditional_start
+{
+  PADDING-RIGHT: 9px;
+  PADDING-LEFT: 3px; 
+  FONT-WEIGHT: bold; 
+  background-image: url(../_engine/images/conditional_start.gif);
+  background-repeat:no-repeat;
+  background-color:orange;
+  background-position:right center; 
+  COLOR: white; 
+  HEIGHT: 14px;
+}
+
+.conditional_end
+{
+  PADDING-RIGHT: 3px;
+  PADDING-LEFT: 9px; 
+  FONT-WEIGHT: bold; 
+  background-image: url(../_engine/images/conditional_end.gif);
+  background-repeat:no-repeat;
+  background-color:orange;
+  background-position:left center; 
+  COLOR: white; 
+  HEIGHT: 14px;
+}
+
+
+/* ----------------- DATASET STYLES ------------------ */
+
+.DatasetSummary_Live   		{width:100%;border-top:2px solid #E8E8E8; border-collapse:collapse;}
+.DatasetSummary_Live_OddRow	{background-color:#F0F0F0}
+.DatasetSummary_Live_EvenRow 	{background-color:#FFFFFF}
+.DatasetSummary_Live_Footer	{border-top:2px solid #E8E8E8;}
+.DatasetSummary_Edit 	   	{width:100%;border:6px solid #E3E3E3;background-repeat:no-repeat;background-position:center right;background-image:url(../_engine/images/dataset_summary_label.gif)}
+.DatasetSummary_Edit_fields 	{border-left:0px solid white;border-top:0px solid white}
+
+.DatasetFind_Live		{BORDER:#e3e3e3 10px solid; WIDTH:658px; }
+.DatasetFind_Edit		{BORDER:#e3e3e3 10px solid; WIDTH:658px; background-image:url(../_engine/images/dataset_find_label.gif);background-repeat:no-repeat;background-position:top right;}
+.DatasetFind_Fields_Edit	{PADDING:15px; BORDER:white 0px solid;background-image:url(../_engine/images/ClickToAddFields.gif);background-repeat:no-repeat;background-position:bottom left;}
+.DatasetFind_Fields_Live	{PADDING:15px;}
+.DatasetFind_Header		{BORDER-LEFT:white 15px solid; BORDER-RIGHT:white 15px solid; BORDER-TOP:white 0px solid; BACKGROUND-IMAGE: url(../_engine/images/dataset_results_heading_back.gif);background-repeat:repeat;background-position:0% 0%; HEIGHT: 31px}
+.DatasetFind_Detail		{BORDER-LEFT:white 15px solid; BORDER-RIGHT:white 15px solid; BORDER-BOTTOM: #d2d7e3 1px solid; BORDER-TOP: white 0px solid}
+.DatasetFind_Footer		{HEIGHT: 35px; BORDER-TOP: white 0px solid; BORDER-LEFT:white 0px solid}
+
+.DatasetDetail_Live		{BORDER:#e3e3e3 10px solid; WIDTH:658px;}
+.DatasetDetail_Edit		{BORDER:#e3e3e3 10px solid; WIDTH:658px;background-image:url(../_engine/images/dataset_detail_label.gif);background-repeat:no-repeat;background-position:top right;}
+.DatasetDetail_Fields_Edit	{BORDER-TOP: white 0px solid; BORDER-LEFT: white 0px solid; PADDING:15px;}
+.DatasetDetail_Fields_Live	{PADDING:15px;}
+
+
+.blacklink A:link {text-decoration: none; color: #434242;}
+.blacklink A:active {text-decoration: none; color: #434242;}
+.blacklink A:visited {text-decoration: none; color: #434242;}
+.blacklink A:hover {background-color: yellow; color: black}
+
+.SummaryField		{DISPLAY: inline-block; WIDTH: 200px; overflow:hidden;}
+.SummaryField A:link 	{text-decoration: none; color: #434242;}
+.SummaryField A:active 	{text-decoration: none; color: #434242;}
+.SummaryField A:visited	{text-decoration: none; color: #434242;}
+.SummaryField A:hover 	{background-color: yellow; color: black}
+
+.FindHeaderLabel	{DISPLAY: inline-block; WIDTH: 100px;overflow:hidden}
+
+.FindDetailField	{DISPLAY: inline-block; WIDTH: 100px; HEIGHT: 18px;overflow:hidden;}
+.FindDetailField A:link {text-decoration: none; color: #3399cc;}
+.FindDetailField A:active {text-decoration: none; color: #3399cc;}
+.FindDetailField A:visited {text-decoration: none; color: #3399cc;}
+.FindDetailField A:hover {text-decoration: underline;}
+
+.iconpanel {height:110px;width:110px;overflow:hidden;}
+.iconpanel A:link {text-decoration: none; color: #3399cc;}
+.iconpanel A:active {text-decoration: none; color: #3399cc;}
+.iconpanel A:visited {text-decoration: none; color: #3399cc;}
+.iconpanel A:hover {text-decoration: underline;}
+
+.SmallPopup {border:1px solid black;width:300px;height:100px;background-color:white}
+.LargePopup {border:1px solid black;width:550px;height:300px;background-color:white}
+.MouseoverPopup {width:313px;height:177px;padding-top:30px;padding-left:6px;padding-right:6px;padding-bottom:40px;}
+.MouseoverPopup2 {width:400px;height:300px;padding-top:30px;padding-left:6px;padding-right:6px;padding-bottom:40px;}
+
+.fieldlabel 	{DISPLAY:inline-block; WIDTH:125px; COLOR:#434242; TEXT-ALIGN:right;padding-right:5px;}
+.memolabel 	{DISPLAY:inline-block; WIDTH:125px; height:45px;COLOR:#434242; TEXT-ALIGN:right;padding-right:5px;}
+.fieldbox 	{WIDTH: 300px; HEIGHT: 22px;margin-top:4px}
+.fieldcheckbox 	{}
+.fieldmemo 	{WIDTH: 300px; HEIGHT: 50px;margin-top:4px}
+
+.FileFolder		{float:left;width:130px;height:150px;BORDER:gray 2px solid;border-collapse:collapse;margin:5px;}
+.FileFolder_FileIcon	{text-align:center}
+.FileFolder_FileName	{background-color:#ebeadb;height:20px;text-align:center}
+.FileFolder_Delete	{background-color:#ebeadb;height:20px}
+.FileFolder_EvenRow	{background-color:#F2F2F2;border:1px solid #E2E2E2}
+.FileFolder_OddRow	{background-color:#FFFFFF;border:1px solid #FFFFFF}
+
+@media print
+{
+.noPrint    {visibility: hidden;}
+}

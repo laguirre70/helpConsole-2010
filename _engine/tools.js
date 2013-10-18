@@ -1,0 +1,4 @@
+﻿function CloseDialog()
+    {
+    parent.CloseDialog()
+    }

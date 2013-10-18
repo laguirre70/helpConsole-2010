@@ -1,0 +1,95 @@
+body
+{
+  margin:0px;
+  font-size: 8pt; 
+  FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+  overflow:auto;
+}
+.content_dark
+{
+  color:#EEEEEE;
+  background-color:#4F4F4F;
+}
+.content_dark A:link {color: #CCCCCC}
+.content_dark A:active {color: #CCCCCC}
+.content_dark A:visited {color: #CCCCCC}
+.content_dark A:hover {color: #CCCCCC}
+
+
+.content_light
+{
+  color:#444444;
+  background-color:#CCCCCC;
+}
+
+
+
+.ToolsHeading
+{
+  font-size:20pt;
+  font-weight:bold;
+  color:#CCCCCC;
+}
+
+.ToolsHeading2
+{
+  font-size:16pt;
+  font-weight:bold;
+  color:#CCCCCC;
+}
+
+.ToolsBreadcrumbs
+{
+  font-size:8pt;
+  color:#AAAAAA;
+}
+
+.ToolsListText
+{
+  padding-left:6px;
+  cursor:pointer;
+  font-family: arial;
+  font-size:11pt;
+  color:#FFFFFF;
+}
+
+
+
+H4 
+{
+  FONT-SIZE: 11pt; 
+  FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif; 
+  COLOR: #000000;
+}
+
+
+table,p,div,span  
+{
+  FONT-SIZE: 8pt;  
+  FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.no_underline:link {text-decoration: none; color: #444444}
+.no_underline:active {text-decoration: none; color: #444444}
+.no_underline:visited {text-decoration: none; color: #444444}
+.no_underline:hover {color:green}
+
+.reportlabel {font-family: tahoma,arial; font-size: 16px; color:#125937}
+.reportlabel:link {text-decoration: none;}
+.reportlabel:active {text-decoration: none;}
+.reportlabel:visited {text-decoration: none;}
+.reportlabel:hover {text-decoration: none; background-color: yellow;} 
+
+.heading {font-family: tahoma,arial; font-size: 14pt; font-weight:bold; color:#444444}
+.heading:link {text-decoration: none; color: #444444}
+.heading:active {text-decoration: none; color: #444444}
+.heading:visited {text-decoration: none; color: #444444}
+.heading:hover {text-decoration: none; color: #3D7BA1}
+
+.tooldesc {color:#6A6969}
+
+.greylink {FONT-SIZE: 8pt; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif; COLOR:#000000;}
+.greylink A:link {text-decoration: none; color: #000000}
+.greylink A:active {text-decoration: none; color: #000000}
+.greylink A:visited {text-decoration: none; color: #000000}
+.greylink A:hover {text-decoration: underline; color: #000000}

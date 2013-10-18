@@ -1,0 +1,227 @@
+﻿/* ------------------ Modify this style to change font on help pages ---- */
+BODY,TABLE,P,DIV,SPAN,INPUT 
+{
+  FONT-SIZE: 8pt; 
+  FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+
+H4 
+{
+  FONT-SIZE: 11pt; 
+  FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif; 
+  COLOR: #000000;
+}
+
+
+li 
+{
+  margin-bottom:4px;
+}
+
+
+/* ----------------- ADD CUSTOM STYLES BELOW.  ------------------ */
+
+
+
+.bodytable
+{
+  padding:20px;
+}
+
+
+
+.heading   /*StyleList*/
+{
+  FONT-WEIGHT: normal; 
+  FONT-SIZE: 25px; 
+  COLOR: #336666; 
+  FONT-FAMILY: Tahoma, verdana, Arial
+}
+
+.subheading   /*StyleList*/
+{
+  FONT-WEIGHT: normal; 
+  FONT-SIZE: 16px; 
+  FONT-WEIGHT: bold; 
+  COLOR: #336666; 
+  FONT-FAMILY: Tahoma, verdana, Arial
+}
+
+.HiddenLink:link /*StyleList*/ {text-decoration: none; color: #434242;}
+.HiddenLink:active {text-decoration: none; color: #434242;}
+.HiddenLink:visited {text-decoration: none; color: #434242;}
+.HiddenLink:hover {background-color: yellow; text-decoration: none; color: #434242;}
+
+.pagelist A:link {text-decoration: none; color: #3399cc;}
+.pagelist A:active {text-decoration: none; color: #3399cc;}
+.pagelist A:visited {text-decoration: none; color: #3399cc;}
+.pagelist A:hover {text-decoration: underline;}
+
+.keywordindex {padding:10px}
+.keywordindex A:link {text-decoration: none; color: #434242;}
+.keywordindex A:active {text-decoration: none; color: #434242;}
+.keywordindex A:visited {text-decoration: none; color: #434242;}
+.keywordindex A:hover {background-color: yellow; color: black}
+
+
+.breadcrumbs /*StyleList*/ {FONT-SIZE: 8pt; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif; COLOR:#CBC9BA;}
+.breadcrumbs A:link {text-decoration: none; color: #CBC9BA}
+.breadcrumbs A:active {text-decoration: none; color: #CBC9BA}
+.breadcrumbs A:visited {text-decoration: none; color: #CBC9BA}
+.breadcrumbs A:hover {text-decoration: underline; color: black}
+
+.TogglePanel         {WIDTH:100%; BORDER:1px solid #cccccc; }
+.TogglePanel_Heading {BACKGROUND-IMAGE:url(images/col.gif); BACKGROUND-REPEAT:no-repeat; BACKGROUND-POSITION:Left center; padding-left:20px; padding-top:4px; padding-right:4px; padding-bottom:4px; cursor:pointer; border-left:0px solid white; border-top:0px solid white; vertical-align:top;}
+.TogglePanel_Body    {padding-left:20px; padding-top:4px; padding-right:4px; padding-bottom:4px; border-left:0px solid white; vertical-align:top;}
+
+
+
+/* ------------------ Modify the styles below to add,edit or delete page status entries ---- */
+.TreeNode_status_Pending
+{ 
+  font-family: tahoma; 
+  font-size: 11px; 
+  padding-top:3px;
+  padding-bottom:2px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+  background-color: #A0DC2C;
+}
+
+.TreeNode_status_Incomplete
+{ 
+  font-family: tahoma; 
+  font-size: 11px; 
+  padding-top:3px;
+  padding-bottom:2px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+  background-color: #A0B6FF;
+}
+
+.TreeNode_status_Needs_Review
+{ 
+  font-family: tahoma; 
+  font-size: 11px; 
+  padding-top:3px;
+  padding-bottom:2px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+  background-color: #FFD016;
+}
+
+
+/* ----------------- TREE STYLES ------------------ */
+.HiddenRow 
+{ 
+  display:none;
+}
+
+
+.TreeView 
+{ 
+  padding-top:4px; 
+  padding-left:1px; 
+  cursor:default;
+
+
+}
+
+.TreeViewMargin
+{ 
+  padding-top:4px; 
+  padding-left:1px; 
+  cursor:default; 
+}
+
+.TreeNode 
+{ 
+  font-family: tahoma; 
+  font-size: 11px; 
+  padding-top:3px;
+  padding-bottom:2px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+}
+
+.GrayedTreeNode 
+{ 
+  font-family: tahoma; 
+  font-size: 11px; 
+  padding-top:3px;
+  padding-bottom:2px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+  color:#AAA9A9; 
+  cursor:default;
+}
+
+.HoverTreeNode 
+{ 
+  font-family: tahoma; 
+  font-size: 11px; 
+  text-decoration:underline; 
+  padding-top:3px;
+  padding-bottom:2px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+  cursor: default; 
+}
+
+.SelectedTreeNode 
+{ 
+  font-family: tahoma; 
+  font-size: 11px; 
+  background-color: gray; 
+  color:white; 
+  padding-top:2px;
+  padding-bottom:1px;
+  padding-left: 2px; 
+  padding-right: 2px; 
+  cursor: default; 
+  border: 1px solid #3F3F3F;
+}
+
+.MultipleSelectedTreeNode
+{
+  font-family: tahoma; 
+  font-size: 11px; 
+  background-color: gray; 
+  color:white; 
+  padding-top:2px;
+  padding-bottom:1px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+  cursor: default; 
+}
+
+.CutTreeNode
+{
+  font-family: tahoma; 
+  font-size: 11px; 
+  background-color: silver; 
+  color:white; 
+  padding-top:2px;
+  padding-bottom:1px;
+  padding-left: 3px; 
+  padding-right: 3px; 
+  cursor: default; 
+}
+
+.NodeEdit 
+{
+  border:1px gray solid;
+  font-family: tahoma; 
+  font-size: 11px;
+}
+
+.Margin
+{
+  background-color: #E6E6F0;
+}
+
+.divtree TD {font-size: 11px; font-family: tahoma,verdana,helvetica; text-decoration: none; white-space:nowrap;}
+.divtree A  {text-decoration: none; color: black;}
+
+

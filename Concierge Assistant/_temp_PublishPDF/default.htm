@@ -1,0 +1,142 @@
+﻿<HTML><HEAD>
+<title>_temp_PublishPDF</title>
+<link href="pagestyles.css" type="text/css" rel="StyleSheet"/>
+<script language=JavaScript src="static_page.js" type="text/javascript"></script>
+<script language="JavaScript" src="static_functions.js"></script>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+function display_contents()
+{
+document.getElementById("tbl_legacy_contents").style.display="none";
+document.getElementById("div_javascript_contents").style.display="";
+}
+</script>
+</HEAD>
+<BODY scroll=no topmargin=0 bottommargin=0 leftmargin=0 rightmargin=0 bgcolor=#FFFFFF>
+<TABLE style="HEIGHT: 100%" cellSpacing=0 cellPadding=0 width="100%" bgColor=#6186b3>
+        <TBODY>
+            <TR>
+                <TD></TD>
+                <TD style="WIDTH: 26%; HEIGHT: 30px">
+                <TABLE style="HEIGHT: 100%" border=0 cellSpacing=0 cellPadding=0 width="100%">
+                    <TBODY>
+                        <TR>
+                            <TD style="WIDTH: 2px" height=20 background=skinimages/blue_tree_topleft.gif></TD>
+                            <TD style="PADDING-LEFT: 5px; HEIGHT: 20px" bgColor=#ffffff></TD>
+                            <TD style="WIDTH: 2px" background=skinimages/blue_tree_topright.gif></TD>
+                        </TR>
+                        <TR>
+                            <TD style="WIDTH: 2px" bgColor=#ffffff></TD>
+                            <TD style="PADDING-LEFT: 5px; HEIGHT: 20px" bgColor=#ffffff>
+                            <P align=center><A title="Gold Key Solutions, Inc Home Page" href="http://goldkeysolutions.com" target=_blank><IMG border=0 alt="" src="skinimages/GKS-Long.jpg"></A></P>
+                            </TD>
+                            <TD style="WIDTH: 2px" bgColor=#ffffff></TD>
+                        </TR>
+                        <TR>
+                            <TD style="WIDTH: 2px" bgColor=#ffffff></TD>
+                            <TD style="PADDING-LEFT: 5px; HEIGHT: 20px" bgColor=#ffffff>
+                            <P align=center><IMG alt="" src="skinimages/GKS1-48.png"></P>
+                            </TD>
+                            <TD style="WIDTH: 2px" bgColor=#ffffff></TD>
+                        </TR>
+                        <TR>
+                            <TD bgColor=#ffffff></TD>
+                            <TD style="HEIGHT: 2px" bgColor=#ffffff></TD>
+                            <TD bgColor=#ffffff></TD>
+                        </TR>
+                    </TBODY>
+                </TABLE>
+                </TD>
+                <TD></TD>
+                <TD vAlign=center rowSpan=2 width="74%" align=right>
+                <TABLE style="WIDTH: 100%; HEIGHT: 100%" border=0 cellSpacing=0 cellPadding=0>
+                    <TBODY>
+                        <TR>
+                            <TD><IMG border=0 src="skinimages/blue_toolbar_left.gif"></TD>
+                            <TD style="HEIGHT: 26px" bgColor=#ebeadb><IMG style="CURSOR: pointer" id="imgindex" alt="Display Keyword Index" src="skinimages/blue_index.gif" onclick="DisplayIndex()"><IMG style="CURSOR: pointer" id="imgaddtofav" alt="Add to your browser favorites" src="skinimages/blue_addtofav.gif" onclick="addtofav()"><IMG style="CURSOR: pointer" id="imgprint" alt="Print Page" src="skinimages/blue_printpage.gif" onclick="printpage()"><IMG style="CURSOR: pointer" id="imglink" border=0 alt="Get the URL to link to this page" src="skinimages/blue_link.gif" onclick="showpageurl()"></TD>
+                            <TD style="WIDTH: 100%" bgColor=#ebeadb vAlign=center align=right>
+                            <TABLE cellSpacing=0 cellPadding=0>
+                                <TBODY>
+                                    <TR>
+                                        <TD><FONT style="FONT-FAMILY: tahoma,arial; COLOR: #444444; FONT-SIZE: 9pt" id=lblsearch>Search:&nbsp;</FONT></TD>
+                                        <TD style="PADDING-TOP: 1px"><INPUT style="BORDER-BOTTOM: #aab9ca 1px solid; BORDER-LEFT: #aab9ca 1px solid; BACKGROUND-COLOR: #f5f4ec; WIDTH: 175px; HEIGHT: 19px; BORDER-TOP: #aab9ca 1px solid; BORDER-RIGHT: #aab9ca 1px solid" id=txtsearch name=txtsearch onKeyPress="SearchKeyPress(this.value,event);"></TD>
+                                        <TD><IMG style="WIDTH: 20px; HEIGHT: 20px; CURSOR: pointer" id="imgsearch" border=0 alt="Search for pages containing this text" src="skinimages/blue_search.gif" onclick="parent.DisplaySearch(txtsearch.value)"></TD>
+                                    </TR>
+                                </TBODY>
+                            </TABLE>
+                            </TD>
+                            <TD bgColor=#ebeadb></TD>
+                            <TD bgColor=#ebeadb></TD>
+                            <TD><IMG border=0 src="skinimages/blue_toolbar_right.gif"></TD>
+                        </TR>
+                        <TR>
+                            <TD></TD>
+                            <TD style="HEIGHT: 3px"></TD>
+                            <TD style="WIDTH: 100%"></TD>
+                            <TD></TD>
+                            <TD></TD>
+                            <TD></TD>
+                        </TR>
+                        <TR>
+                            <TD><IMG border=0 src="skinimages/blue_window_topleft.gif"></TD>
+                            <TD style="HEIGHT: 2px" bgColor=#ffffff></TD>
+                            <TD style="WIDTH: 100%" bgColor=#ffffff></TD>
+                            <TD bgColor=#ffffff></TD>
+                            <TD bgColor=#ffffff></TD>
+                            <TD><IMG border=0 src="skinimages/blue_window_topright.gif"></TD>
+                        </TR>
+                        <TR>
+                            <TD bgColor=#ffffff vAlign=top colSpan=6><div id="divpage" style="width:100%;height:100%;"><iframe id="basefrm" name="basefrm" style="width:100%;height:100%" frameborder=0 allowtransparency=true src="Welcome.htm"></iframe><script>loadpage()</script></div></TD>
+                        </TR>
+                        <TR>
+                            <TD><IMG border=0 src="skinimages/blue_window_bottomleft.gif"></TD>
+                            <TD style="HEIGHT: 2px" bgColor=#ffffff></TD>
+                            <TD style="WIDTH: 100%" bgColor=#ffffff></TD>
+                            <TD bgColor=#ffffff></TD>
+                            <TD bgColor=#ffffff></TD>
+                            <TD><IMG border=0 src="skinimages/blue_window_bottomright.gif"></TD>
+                        </TR>
+                    </TBODY>
+                </TABLE>
+                </TD>
+                <TD vAlign=center align=right></TD>
+            </TR>
+            <TR>
+                <TD>&nbsp;&nbsp;</TD>
+                <TD>
+                <TABLE style="HEIGHT: 100%" border=0 cellSpacing=0 cellPadding=0 width="100%">
+                    <TBODY>
+                        <TR>
+                            <TD bgColor=#ffffff></TD>
+                            <TD style="HEIGHT: 2px" bgColor=#ffffff></TD>
+                            <TD bgColor=#ffffff></TD>
+                        </TR>
+                        <TR>
+                            <TD style="WIDTH: 2px" bgColor=#ffffff></TD>
+                            <TD style="PADDING-BOTTOM: 8px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; PADDING-TOP: 8px" bgColor=#cfddee vAlign=top><table id="tbl_legacy_contents" cellpadding=0 cellspacing=0 border=0><tr><td><img src="skinimages/toc_fld.gif" border=0 width=16 height=16>&nbsp;<a href="Welcome.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Welcome</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="Ask.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Ask</font></a><br><img src="skinimages/toc_fld.gif" border=0 width=16 height=16>&nbsp;<a href="Installation.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Installation</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="System_Requirements.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>System&nbsp;Requirements</font></a><br><img src="skinimages/toc_fld.gif" border=0 width=16 height=16>&nbsp;<a href="Basic_Functions.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Basic&nbsp;Functions</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="screen_overview.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Screen&nbsp;Overview</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="Contacts.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Contacts</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="events.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Events</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="Logbook.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Logbook</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="messages.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Messages</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="profiles.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Profiles</font></a><br><img src="skinimages/toc_fld.gif" border=0 width=16 height=16>&nbsp;<a href="Advanced_Functions.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Advanced&nbsp;Functions</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="Advanced_Function_1.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Administration</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="contact_list_keywords.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Contact&nbsp;List&nbsp;Keywords</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="event_types.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Event&nbsp;Types</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="logbook_categories.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Logbook&nbsp;Categories</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="the_data_entry_panel.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>The&nbsp;Data&nbsp;Entry&nbsp;Panel</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="profile_indicators.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Profile&nbsp;Indicators</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="concierge_staff.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Concierge&nbsp;Staff</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="concierge_white_board.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Concierge&nbsp;White&nbsp;Board</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="white_board_usage.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>White&nbsp;Board&nbsp;Usage</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="manage_messages.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Manage&nbsp;Messages</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="configuration_options.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Configuration&nbsp;Options</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="create_your_own_map.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Create&nbsp;Your&nbsp;Own&nbsp;Map</font></a><br><img src="skinimages/toc_fld.gif" border=0 width=16 height=16>&nbsp;<a href="add_ons.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Add&nbsp;Ons</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="key_control.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Key&nbsp;Control</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="docs/LostandFound.pdf" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Lost&nbsp;and&nbsp;Found&nbsp;PDF&nbsp;Manual</font></a><br><img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="Advanced_Function_2.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Reports</font></a><br><img src="skinimages/toc_fld.gif" border=0 width=16 height=16>&nbsp;<a href="Tutorials.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Videos</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_fld.gif" border=0 width=16 height=16>&nbsp;<a href="contact_lessons.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Contacts&nbsp;Videos</font></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="Tutorial_1.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Add&nbsp;a&nbsp;Contact</font></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="search_contacts.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Search&nbsp;Contacts</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_fld.gif" border=0 width=16 height=16>&nbsp;<a href="logbook_lessons.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Logbook&nbsp;Videos</font></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="add_a_logbook_entry.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Add&nbsp;a&nbsp;Logbook&nbsp;Entry</font></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="print_a_confirmation.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Print&nbsp;A&nbsp;Confirmation</font></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="print_an_itinerary.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Print&nbsp;an&nbsp;Itinerary</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_fld.gif" border=0 width=16 height=16>&nbsp;<a href="add_ons_videos.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Add&nbsp;Ons&nbsp;Videos</font></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="lost_and_found_overview.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Lost&nbsp;and&nbsp;Found&nbsp;Overview</font></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="key_control_overview.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Key&nbsp;Control&nbsp;Overview</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_fld.gif" border=0 width=16 height=16>&nbsp;<a href="admin_videos.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Admin&nbsp;Videos</font></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="property_logo.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Property&nbsp;Logo</font></a><br><img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="download_documents1.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Documents</font></a><br><img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="pci_pa-dss.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>PCI&nbsp;PA-DSS</font></a><br><img src="skinimages/toc_fld.gif" border=0 width=16 height=16>&nbsp;<a href="FAQ.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>FAQ</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="General_FAQ.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>General&nbsp;FAQ</font></a><br>&nbsp;&nbsp;&nbsp;<img src="skinimages/toc_page.gif" border=0 width=32 height=16>&nbsp;<a href="Installation_FAQ.htm" class="HiddenLink"><font size=2 face=arial style='color: black; font-family: tahoma; font-size: 11px; TEXT-DECORATION: none;'>Installation&nbsp;FAQ</font></a><br></td></tr></table><div id="div_javascript_contents" class="divtree" style="height:100%;width:100%"><iframe id="fra_contents" name="fra_contents" allowtransparency=true style="width:100%;height:100%" frameborder=0 src="contents.htm"></iframe><script>display_contents()</script></div></TD>
+                            <TD style="WIDTH: 2px" bgColor=#ffffff></TD>
+                        </TR>
+                        <TR>
+                            <TD bgColor=#ffffff></TD>
+                            <TD style="HEIGHT: 2px" bgColor=#ffffff></TD>
+                            <TD bgColor=#ffffff></TD>
+                        </TR>
+                    </TBODY>
+                </TABLE>
+                </TD>
+                <TD>&nbsp;&nbsp;</TD>
+                <TD>&nbsp;&nbsp;</TD>
+            </TR>
+            <TR>
+                <TD style="HEIGHT: 30px"></TD>
+                <TD style="HEIGHT: 30px">
+                <P align=center><FONT style="FONT-SIZE: 8pt" color=#ffffff size=2 face=Arial>The Concierge Assistant Online Help</FONT></P>
+                </TD>
+                <TD></TD>
+                <TD vAlign=center align=right>
+                <P align=right><FONT style="FONT-SIZE: 8pt" color=#ffffff size=2 face=Arial>Copyright &#169; 2009&nbsp; <A href="http://www.goldkeysolutions.com" target=_blank><FONT color=white>Gold Key Solutions, Inc.</FONT></A> All Rights Reserved. </FONT><FONT color=#ffffff size=2 face=Arial></FONT></P>
+                </TD>
+                <TD vAlign=center align=right></TD>
+            </TR>
+        </TBODY>
+    </TABLE><table id="tblpageurl" style="position:absolute;top:0px;left:0px;width:100%;height:100%;display:none"><tr><td id="tdpageurl" align="center" valign="middle"></td></tr></table></BODY></HTML>

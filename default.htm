@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>HelpConsole 2010</title>
+<link rel="shortcut icon" href="_engine/images/favicon.ico" type="image/x-icon" />
+
+<style>
+	BODY {font-size:8pt; color:white;font-family:Tahoma, Arial, Helvetica, sans-serif;}
+</style>
+
+<script type="text/javascript">
+function PageLoaded()
+    {
+    //alert("Page Loaded")
+    //if the browser is safari then redirect because the code below prevents the manage projects screen from being displayed.
+    //if (navigator.appName == "Netscape"){window.location="_engine/default.aspx";}
+
+    //Hide the splash screen and show the iframe
+    document.getElementById("frame1").style.display = "";
+    document.getElementById("divsplash").style.display = "none";
+    
+    //Check for errors after 2 seconds. This allows the frame to be fully loaded.
+    setTimeout("ErrorCheck()", 2000);
+    }
+
+function ErrorCheck()
+    {
+    if (window.frame1.document.getElementById("body") != null)
+	{
+	    //document.getElementById("divmsg").innerHTML = "";
+	    document.getElementById("trmsg").style.display = "none";
+	}
+    
+    else
+        {
+        //Error on page
+	DisplayError();
+        }
+    }
+
+
+
+function DisplayError()
+    {
+    var html=window.frame1.document.body.innerHTML;
+//alert("html = "+html);
+    var msg="";
+
+    if (html.toLowerCase().indexOf("the resource cannot be found.") != -1)
+	{
+        //Page not found
+        msg = "The file '_engine/default.aspx' was not found. This file may have been deleted or renamed, or the '_engine' folder may have been deleted or renamed.";
+	}
+
+	else if (html.toLowerCase().indexOf("could not load type 'helpconsole2010.default2'.") != -1) {
+	    //helpconsole2010.dll missing
+	    msg = "The error above usually occurs for one of the following reasons:<br>";
+	    msg = msg + "1. The file 'helpconsole2010.dll' is missing from the 'bin' folder.<br>";
+	    msg = msg + "2. The .NET Framework defined for the 'Helpconsole2010' virtual directory is set to a version lower than 2.0 (such as 1.1)<br>";
+	    msg = msg + "3. The virtual directory 'default application' was removed.";
+	}
+
+
+	else if (html.toLowerCase().indexOf("the 'microsoft.jet.oledb.4.0' provider is not registered on the local machine.") != -1)
+	{
+	    //Database provider not registered
+	    msg = "The error above usually occurs on 64-bit versions of Windows. The 'Enable 32-bit applications' setting must be set to true. See the following KB article for details: <a href='http://www.extremeease.com/help/knowledgebase/default.aspx?pageid=jet_oledb_provider_not_registered'>JET.OLEDB Provider not registered</a>";
+	}
+
+	else if (html.toLowerCase().indexOf("unrecognized attribute 'requestvalidationmode'") != -1) {
+	    //Attribute not valid for .NET Framework 2.0
+	    msg = "The error above usually occurs if the .NET Framework was previously set to 4.0 and then changed to 2.0. To fix this, rename the file 'web.config' to 'web.config.Net40' in the 'c:\\program files\\helpconsole 2010\\_engine\\' folder";
+	}
+
+
+    else if (html.toLowerCase().indexOf("the page you are requesting cannot be served because of the multipurpose internet mail extensions") != -1)
+	{
+        //ASP.NET option not check on Vista
+        msg = "The error above usually indicates that the 'ASP.NET' option for IIS is not turned on. Refer to the following help page to ensure that all required IIS options are selected: <a href='http://www.helpconsole2010.com/helpconsole%202010/default.aspx?pageid=Installing_IIS_on_Vista'>Installing IIS on Vista</a><br><br>";
+	}
+
+    else if (html.toLowerCase().indexOf("could not load file or assembly 'abcpdf") != -1)
+	{
+        //IIS running at medium trust.
+        msg = "The error above usually indicates that the web server is running at medium trust (as opposed to full trust). To allow HelpConsole to run with this trust level, delete the files 'ABCpdf.dll' and 'ABCpdfCE5.dll' from the 'bin' folder. Publishing to PDF will not be enabled.";
+	}
+
+    else if (html.toLowerCase().indexOf("you have attempted to execute a cgi, isapi, or other executable program from a directory that does not allow programs to be executed.") != -1)
+	{
+        //NO execute permissions.
+        msg = "The error above usually indicates that the 'HelpConsole2010' virtual directory has script execution disabled.<br><br>";
+	msg = msg + "<strong>Windows XP/2003:</strong> Click Start > Control Panel > Administrative Tools > Internet Information Services > HelpConsole2010 Properties > Execute Permissions='Scripts Only'<br>";
+	}
+
+    else if (html.toLowerCase().indexOf("http error 404 - file or directory not found.") != -1)
+	{
+        //NO execute permissions.
+        msg = "The error above usually indicates that the page _engine/default.aspx was not found. This error could also occur if IIS was installed after the .NET Framework 2.0 was installed.";
+	}
+
+
+    else
+	{
+        //error that has not been trapped
+        msg = "Undetermined Error!"; 
+	}
+
+    //Display error
+    document.getElementById("divmsg").innerHTML = "<img src='_engine/images/error.gif'>&nbsp;<font size=3><strong>HelpConsole 2010 Error Detected!</strong></font><br><br>" + msg + "<br><br>Additional Resources:<br><a href='http://www.helpconsole2010.com/helpconsole%202010/'>HelpConsole 2010 Help System</a><br><a href='http://www.extremeease.com/help/knowledgebase/'>Knowledgebase</a><br><a href='http://www.extremeease.com/'>Extreme Ease Website</a><br>";
+    //document.getElementById("divmsg").style.backgroundColor = "#FBF591";
+    document.getElementById("divmsg").style.backgroundColor = "#242424";
+
+    }
+
+</script>
+
+</head>
+<body style="background-color:#242424" topmargin=0 bottommargin=0 leftmargin=0 rightmargin=0 scroll=no onload="PageLoaded()">
+<form>
+<table style="width:100%;height:100%" border=0 cellpadding=0 cellspacing=0>
+    <tr>
+        <td align="center">
+            <div id="divsplash"><img src="_engine/images/startup_helpconsole_logo.gif" /><br /><br /><img src="_engine/images/loading.gif" /></div>
+            <iframe id="frame1" name="frame1" src="_engine/default.aspx" style="width:100%;height:100%;display:none;" frameborder="0"></iframe>
+        </td>
+    </tr>
+    <tr id="trmsg" style="height:30px">
+        <td><div id="divmsg" style="height:100%;width:100%;padding=15px;">Loading HelpConsole 2010...</div></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>

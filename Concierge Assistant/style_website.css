@@ -1,0 +1,40 @@
+﻿.skin_body {background-color:#363D47; background-image:url(skinimages/website_background.jpg); background-repeat:repeat-x; margin:0px}
+.skin_separator {display:none}
+.skin_contentswrapper {display:none;}
+.skin_pagewrapper {width:936px;}
+.skin_container {}
+.skin_header {}
+.skin_contentsheader {}
+.skin_contents {}
+.skin_contentsfooter {}
+.skin_pageheader {}
+.skin_pageleft {display:none}
+.skin_page {background-color:#FFFFFF;}
+.skin_pageright {display:none}
+.skin_pagefooter {}
+.skin_footer {}
+
+.page_body2 {padding-left:42px!important;}
+
+
+.search_textbox_cell{background-image:url(images_website/search_back.gif);width:170px;height:24px;}
+.search_button_cell{background-image:url(images_website/search_button.gif);width:26px;}
+.search_advbutton_cell{display:none}
+.search_textbox{background-color: transparent;border:0px solid transparent;width:165px}
+
+.menu_selected {cursor:pointer; font-size:11pt;  color:#BBBBBB; background-image:url(images_website/menu_selected.gif); background-repeat:no-repeat; background-position:top center;}
+.menu_notselected {cursor:pointer; font-size:11pt; color:#AAAAAA; background-image:url(images_website/menu_notselected.gif)}
+.menu_left {width:4px}
+.menu_right{width:4px}
+.menu_container{width:600px; height:37px}
+
+.TreeNode 
+{ 
+  font-family: tahoma; 
+  font-size: 11px; 
+  padding-top:3px;
+  padding-bottom:2px;
+  padding-left: 2px; 
+  padding-right: 3px;
+  color:#CCCCCC; 
+}

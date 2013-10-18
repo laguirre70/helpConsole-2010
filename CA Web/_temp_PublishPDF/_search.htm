@@ -1,0 +1,83 @@
+<html>
+<head>
+<meta name=vs_targetSchema content="http://schemas.microsoft.com/intellisense/ie5">
+<title>Search Results</title>
+<meta http-equiv='content-type' content='text/html; charset=utf-8' />
+<link rel="stylesheet" type="text/css" href="pagestyles.css" />
+</head>
+<BODY leftmargin=0 rightmargin=0 bottommargin=0 topmargin=0 STYLE="background-color:transparent">
+	<table id="TreeContainer" cellSpacing=0 cellPadding=0 width=100% height=100% border="0"><tr><td class="keywordindex" valign="top">		
+		<script language="JavaScript" src="searchEngine.js"></script>
+		<script language="JavaScript" src="searchDB.js"></script>
+		<script language="JavaScript">
+		<!--
+
+		//if the parent field 'txtsearch' is not found then display search field here
+		if (parent.document.getElementById("txtsearch") == null)
+			{
+			//document.writeln("Search:<br><input id=txtsearch_tab style='WIDTH: 175px' name='txtsearch_tab'><img id='imgsearch_tab' style='CURSOR: pointer' onclick='parent.DisplaySearch(txtsearch_tab.value)' alt='Search for pages containing this text' hspace=3 src='skinimages/white_search.gif' align=absmiddle border=0><br><br>");
+			document.writeln("Enter text to search for:<br><input id=txtsearch style='WIDTH: 200px; HEIGHT: 22px' size=24 name=txtsearch><img style='cursor:pointer' onclick=parent.DisplaySearch(txtsearch.value) alt=Search src='skinimages/tabs_search_go.gif' align=absMiddle><br><br>");
+			}
+		else	
+			{
+			document.writeln("<a href='contents.htm'><img src='skinimages/form_cancel.gif' border=0 align=right></a>");
+			}
+
+		// -->
+		</script>
+
+
+	<font face=arial size=2><Strong>Search Results</strong></font><br>
+
+
+	<script language="JavaScript">
+	<!--
+
+		//get the static help system type (frames, iframes, noframes)
+		var StaticType=getURLvalue("type");
+
+
+
+		if (searchWords = getURLvalue("searchTxt")) 
+			{
+			// Do the search
+			results = performSearch(searchWords, 3);
+			
+			// This means that there are search results to be displayed.
+			// Loop through them
+			if (results[0]) {
+			
+				
+				for (r = 0; r < results.length; r++) {
+					result = searchDB[results[r]];
+					
+					/////////////////////////////////////////////////////////////
+					// This is where you modify the formatting of the results
+					if (StaticType == "noframes")
+						{
+						document.writeln("<a href=\"" + result.url + "\">" + result.heading + "</a><br>");
+						}
+					else
+						{
+						document.writeln("<a href=\"" + result.url + "?searchTxt="+searchWords+"\" target='basefrm' onclick='SelectSearchRow(this)'>" + result.heading + "</a><br>");
+						}
+					/////////////////////////////////////////////////////////////
+				}
+				
+			}
+			// If it's not an array, then we got an error message, so display that
+			// rather than results
+			else {
+				document.writeln("<i>" + results + "</i>");
+				document.writeln("<br>");
+			}
+			
+		}
+		
+		// -->
+		</script>
+	</td></tr></table>
+
+ </BODY>
+
+</html>

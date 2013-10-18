@@ -1,0 +1,63 @@
+﻿<root>
+
+	<tools name="Toolbar1" dockable="false" enabled="true">
+		<tool name="InsertTable" />
+		<tool name="ImageManager" shortcut="CTRL+G"/>
+		<tool name="LinkPage" shortcut="CTRL+L"/>
+		<tool name="FontName"/>
+		<tool name="FontSize"/>
+		<tool name="Bold" shortcut="CTRL+B"/>
+		<tool name="Underline" shortcut="CTRL+U"/>
+		<tool name="JustifyLeft" />
+		<tool name="JustifyCenter" />
+		<tool name="JustifyRight" />
+		<tool name="ForeColor" />
+	</tools>
+	<tools name="Toolbar2" dockable="false" enabled="true"> 
+		<tool name="Print" shortcut="CTRL+P"/>
+		<tool name="SpellCheck" />
+		<tool name="FindAndReplace" shortcut="CTRL+F"/>		
+		<tool name="LinkManager" shortcut="CTRL+K"/>
+		<tool name="Unlink" shortcut="CTRL+SHIFT+K"/>
+		<tool name="InsertCondition" />
+		<tool name="FlashManager" />
+		<tool name="MediaManager" />
+		<tool name="DocumentManager" />		
+		<tool name="FormatStripper" />		
+		<tool name="ToggleTableBorder" />
+		<tool name="AbsolutePosition" />
+		<tool name="Cut" shortcut="CTRL+X"/>		
+		<tool name="Copy" shortcut="CTRL+C"/>
+		<tool name="Paste" shortcut="CTRL+V"/>
+		<tool name="PasteFromWord" />
+		<tool name="PasteFromWordNoFontsNoSizes" />
+		<tool name="PastePlainText" />
+		<tool name="PasteAsHtml"  />
+		<tool name="Undo" shortcut="CTRL+Z"/>
+		<tool name="Redo" shortcut="CTRL+Y"/>
+	</tools>
+	<tools name="Toolbar3" dockable="false" enabled="true">
+		<tool name="ApplyClass"/>
+		<tool name="FormatBlock"/>
+		<tool name="Italic" shortcut="CTRL+I"/>
+		<tool name="JustifyFull" />
+		<tool name="BackColor" />
+		<tool name="Indent" />
+		<tool name="Outdent" />
+		<tool name="InsertOrderedList" />
+		<tool name="InsertUnorderedList" />
+		<tool name="Superscript" />
+		<tool name="Subscript" />
+		<tool name="StrikeThrough" />
+		<tool name="InsertParagraph" />
+		<tool name="InsertSymbol" />
+		<tool name="InsertFormElement" />
+		<tool name="InsertHorizontalRule" />
+		<tool name="InsertDate" />
+		<tool name="InsertTime" />		
+
+	</tools>
+</root>
+
+
+

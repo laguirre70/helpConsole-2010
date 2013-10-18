@@ -1,0 +1,180 @@
+<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="default_project.aspx.vb" Inherits="HelpConsole2008.default_project" validateRequest="false" enableEventValidation="false" %>
+<%@ Register TagPrefix="ComponentArt" Namespace="ComponentArt.Web.UI" Assembly="ComponentArt.Web.UI" %>
+<%@ Register TagPrefix="radE" Namespace="Telerik.WebControls" Assembly="RadEditor.Net2" %>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <script type="text/javascript" src="../_engine/editor.js"></script>
+    <script type="text/javascript" src="../_engine/page.js"></script>
+    <link href="pagestyles.css" type="text/css" rel="stylesheet"/>
+    <link href="../_engine/AppStyles.css" type="text/css" rel="stylesheet"/>
+    
+	 <title>
+        <%  
+            Dim sProjname As String
+            sProjname = Request.PhysicalPath.Substring(0, Request.PhysicalPath.LastIndexOf("\"))
+            sProjname = sProjname.Substring(sProjname.LastIndexOf("\") + 1)
+        %>
+        <%= sProjname & " - Help Desk" %>
+    </title>
+
+</head>
+<!-- <title>
+        <%  
+            Dim sProjname As String
+            sProjname = Request.PhysicalPath.Substring(0, Request.PhysicalPath.LastIndexOf("\"))
+            sProjname = sProjname.Substring(sProjname.LastIndexOf("\") + 1)
+        %>
+        <%=Application("appname") & " " & Application("appversion") & " " & Application("AppServicePack") & " - " & sProjname%>
+    </title> -->
+<body id="body" runat="server">
+    <form id="Form1" runat="server">
+
+    	<input id="txteditid" type="hidden" runat="server" />
+    	<input id="txtaction" type="hidden" runat="server" />
+    	<input id="txtexternalurl" type="hidden" runat="server" />
+    	<input id="delete_txtloginaction" type="hidden" runat="server" />
+    	<input id="txtcontentschanged" type="hidden" runat="server" />
+    	<input id="txtpagechanged" type="hidden" runat="server" />
+    	<input id="NewEditorHTML" type="hidden" runat="server" />
+    	
+    	<!-- DIALOG WINDOW -->
+        <table id="tbldialog" runat="server" style="width:100%;height:100%;position:absolute;top:0px;left:0px;z-index:5;display:none">
+            <tr>
+    	        <td align="center">
+                    
+                    <table id="tblDialogWindow" runat="server" style="width:500px;height:300px;" cellpadding="0" cellspacing="0">
+                        <tr style="height:36px">
+                            <td style="width:8px"><img src="../_engine/images/dlg_top_left.gif" /></td>
+                            <td style="background-image:url(../_engine/images/dlg_top_center.gif)">
+                                <img id="imgcloseform" runat="server" onmouseover="this.src='../_engine/images/closeform_mouseover.gif'" onmouseout="this.src='../_engine/images/closeform.gif'" src="../_engine/images/closeform.gif" alt="close" style="cursor:hand;" align="right" onclick="CloseDialog()"/>
+                                <img id="imgretractform" src="../_engine/images/retractform.gif" alt="Reduce Window Size" style="cursor:hand;display:none" align="right" onclick="RetractDialog()"/>
+                                <img id="imgexpandform" src="../_engine/images/expandform.gif" alt="Increase Window Size" style="cursor:hand;display:none" align="right" onclick="ExpandDialog()"/>
+                                <div id="spanheading" runat="server" style="font-size:11pt;font-family:Arial;color:#DDDDDD;padding-top:4px;padding-left:2px;">Tools</div>
+                            </td>
+                            <td style="width: 8px"><img src="../_engine/images/dlg_top_right.gif" /></td>
+                        </tr>
+                        <tr>
+                            <td style="background-image: url(../_engine/images/dlg_left_center.gif)"></td>
+                            <td id="tddialog" style="background-image:url(../_engine/images/loading.gif);background-position:center center;background-repeat:no-repeat">
+                                [content]
+
+                            </td>
+                            <td style="background-image: url(../_engine/images/dlg_right_center.gif)"></td>
+                        </tr>
+                        <tr style="height:8px;">
+                            <td><img src="../_engine/images/dlg_bottom_left.gif" /></td>
+                            <td id="tdmessage" style="font-size:9pt;font-family:Tahoma,Arial;background-image:url(../_engine/images/dlg_bottom_center.gif); width: 668px;" runat="server">
+                                <span id="spanbreadcrumbs"></span>
+                            </td>
+                            <td><img src="../_engine/images/dlg_bottom_right.gif" /></td>
+                        </tr>
+                    </table>
+	            </td>
+    	    </tr>
+        </table>
+
+        <!-- LOGIN -->
+   	    <table id="tblLogin" runat="server" style="width:100%;height:100%;position:absolute;top:0px;left:0px;display:none;z-index:6"><tr><td align="center">
+            <table style="width:330px;height:208px;background-image:url(../_engine/images/login_back.gif);" cellpadding="4" cellspacing="0">
+                <tr style="height:48px">
+                    <td style="width:95px">&nbsp;</td>
+                    <td align="right" valign="top"><img onmouseover="this.src='../_engine/images/closeform_mouseover.gif'" onmouseout="this.src='../_engine/images/closeform.gif'" src="../_engine/images/closeform.gif" alt="close" style="cursor:hand;" onclick="CloseLogin()"/></td>
+                </tr>
+                <tr>
+                    <td style="font-size:9pt;font-family:Tahoma,Arial;padding-left:30px">Username:</td>
+                    <td><input style="width:192px" type="text" id="txtusername" value="" onkeypress="return LoginKeyPress(event);" runat="server"/><input id="txtactiveusername" type="hidden" runat="server"/></td>
+                </tr>
+                <tr>
+                    <td style="font-size:9pt;font-family:Tahoma,Arial;padding-left:30px">Password:</td>
+                    <td><input style="width:192px" type="password" id="txtpassword" value="" onkeypress="return LoginKeyPress(event);" runat="server"/><input id="txtactivepassword" type="hidden" runat="server"/></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td style="padding-right:30px" align="right" valign="bottom"><input style="width:120px;" type="button" id="Button1" value="Login" onclick="Login()" runat="server"/></td>
+                </tr>
+                <tr style="height:50px;">
+                    <td id="tdloginmessage" colspan="2">&nbsp;</td>
+                </tr>
+            </table>
+    	</td></tr></table>
+
+
+    	<div id="divtransparency" style="width:100%;height:100%;z-index:4;position:absolute;top:0px;left:0px;display:none;background-color:Black;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);-moz-opacity:0.30;opacity:.3;" runat="server"></div>
+
+        <!-- CONTENTS -->
+    	<div id="divcontents" runat="server" style="position:absolute;top:0px;left:0px;z-index:3;display:none;">
+    	    <ComponentArt:TreeView id="TreeView1" runat="server"></ComponentArt:TreeView>
+    	    <div id="spanindex" style="width:100%;overflow:auto;display:none"></div>
+    	    <div id="spansearchresults" style="width:100%;overflow:auto;display:none"></div>
+    	    <div id="spanproperties" style="width:100%;overflow:auto;display:none;"></div>
+    	</div>
+        
+        <!-- EDITOR -->
+    	<div id="diveditor" runat="server" style="position:absolute;top:0px;left:0px;z-index:2;display:none;">
+    	    <radE:RadEditor ID="editor1" Runat="server" DocumentsFilters="*.doc,*.pdf,*.htm" MaxImageSize="800000" MaxDocumentSize="800000" MaxFlashSize="800000"></radE:RadEditor>
+       			<script type="text/javascript">
+				    RadEditorCommandList["More"] = function(commandName, editor, oTool) {ShowToolbar(editor,"full")}
+				    RadEditorCommandList["Less"] = function(commandName, editor, oTool) {ShowToolbar(editor,"minimal")}
+				    RadEditorCommandList["FileSave"] = function(commandName, editor, oTool) {Save(true)}
+				    RadEditorCommandList["Close"] = function(commandName, editor, oTool) {loadpage(window.TreeView1.SelectedNode.get_id())}
+				    RadEditorCommandList["LinkPage"] = function(commandName, editor, oTool) {linkpage(commandName, editor)}
+				    RadEditorCommandList["InsertCondition"] = function(commandName, editor, oTool) {InsertCondition(commandName,editor)}
+					RadEditorCommandList["InsertVariable"] = function(commandName, editor, oTool) {InsertVariable(commandName,editor)}  
+					RadEditorCommandList["StickyNote"] = function(commandName, editor, oTool) {InsertStickyNote(editor)}
+					RadEditorCommandList["InsertPageObject"] = function(commandName, editor, oTool) {InsertPageObject(commandName,editor)}
+					RadEditorCommandList["GlobalSearchAndReplace"] = function(commandName, editor, oTool) {GlobalSearchAndReplace(editor)}
+					
+//function OnClientCommandExecuting(editor, commandName, oTool)           
+//    {
+//    var browserName=navigator.appName;            
+//    //if (commandName == "Paste") {alert("command is Paste")}
+//    //if (browserName == "Microsoft Internet Explorer") {alert("Browser is IE")}
+//    if (commandName == "Paste" && browserName=="Microsoft Internet Explorer")           
+//        {       
+//        //editor.Fire("PastePlainText");        
+//        alert("paste");
+//        editor.Fire("PastePlainText");
+//        return false;           
+//        }               
+//    } 
+
+
+					
+			    </script>
+    	</div>
+    	    
+        
+        <div id="divbody" style="top:0px;left:0px;WIDTH:100%;POSITION:absolute;HEIGHT:100%;z-index:1" runat="server"></div>
+
+<script type="text/javascript" src="../_engine/default.js"></script>
+<script type="text/javascript">
+    function GetParm(name)
+        {
+        name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");  
+        var regexS = "[\\?&]"+name+"=([^&#]*)";  
+        var regex = new RegExp( regexS );  
+        var results = regex.exec( window.location.href );  
+        if( results == null )
+    	    {	
+    	    return "";
+            }
+        else 
+    	    {
+            return results[1];
+            }
+        }
+
+    var searchtext = GetParm("search");
+		
+    if (searchtext.length > 0) 
+        {
+        DisplaySearch(searchtext);
+        }
+</script>
+
+    </form>
+
+</body>
+</html>

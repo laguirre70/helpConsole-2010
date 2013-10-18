@@ -1,0 +1,29 @@
+﻿<root>
+
+	<tools name="Toolbar1" dockable="false" enabled="true">
+		<tool name="ImageManager" shortcut="CTRL+G"/>
+		<tool name="LinkManager" shortcut="CTRL+K"/>
+		<tool name="FlashManager" />
+		<tool name="DocumentManager" />		
+		<tool name="InsertTable" />
+		<tool name="FontName"/>
+		<tool name="FontSize"/>
+		<tool name="Bold" shortcut="CTRL+B"/>
+		<tool name="Underline" shortcut="CTRL+U"/>
+		<tool name="Italic" shortcut="CTRL+I"/>
+		<tool name="BackColor" />
+		<tool name="JustifyLeft" />
+		<tool name="JustifyCenter" />
+		<tool name="JustifyRight" />
+		<tool name="ForeColor" />
+		<tool name="Cut" shortcut="CTRL+X"/>		
+		<tool name="Copy" shortcut="CTRL+C"/>
+		<tool name="Paste" shortcut="CTRL+V"/>
+		<tool name="Undo" shortcut="CTRL+Z"/>
+		<tool name="Redo" shortcut="CTRL+Y"/>
+
+	</tools>
+</root>
+
+
+

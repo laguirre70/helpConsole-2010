@@ -1,0 +1,22 @@
+﻿<root>
+
+	<tools name="Toolbar1" dockable="false" enabled="true">
+		<tool name="Close" />
+		<tool name="FileSave" />
+		<tool name="LinkPage" shortcut="CTRL+L"/>
+		<tool name="InsertTable" />
+		<tool name="ImageManager" shortcut="CTRL+G"/>
+		<tool name="FontName"/>
+		<tool name="FontSize"/>
+		<tool name="Bold" shortcut="CTRL+B"/>
+		<tool name="Underline" shortcut="CTRL+U"/>
+		<tool name="ForeColor" />
+		<tool name="InsertPageObject" />		
+		<tool name="More" />
+
+	</tools>
+
+</root>
+
+
+

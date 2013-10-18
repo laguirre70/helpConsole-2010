@@ -1,0 +1,41 @@
+﻿<root>
+
+  <modules>
+	  <module name="RadEditorStatistics" dockingZone="Bottom" enabled="true" visible="false" dockable="true" />
+	  <module name="RadEditorDomInspector" dockingZone="Module" enabled="true" visible="false" dockable="true" />
+	  <module name="RadEditorNodeInspector" dockingZone="Module" enabled="true" visible="false" dockable="true" />
+	  <module name="RadEditorDiagnostics" dockingZone="Module" enabled="true" visible="false" dockable="true" />
+	  <module name="RadEditorHtmlInspector" dockingZone="Module" enabled="true" visible="false" dockable="true" />
+  </modules>
+
+	<tools name="MainToolbar" dockable="true" enabled="true">
+		<tool name="FindAndReplace" />
+		<tool separator="true"/>
+		<tool name="Undo" />
+		<tool name="Redo" />
+		<tool separator="true"/>
+		<tool name="Cut" />
+		<tool name="Copy" />
+		<tool name="Paste" shortcut="CTRL+!"/>
+	</tools>
+
+	<tools name="Formatting" enabled="true" dockable="true">
+		<tool name="Bold" />
+		<tool name="Italic" />
+		<tool name="Underline" />
+		<tool separator="true"/>
+		<tool name="ForeColor" />
+		<tool name="BackColor"/>
+		<tool separator="true"/>
+		<tool name="FontName"/>
+		<tool name="RealFontSize"/>
+		<tool name="ModuleManager" />
+	</tools>
+
+	<tools name="Bottom" enabled="true" dockable="true" DockingZone = "Bottom">
+		<tool name="Print" shortcut="CTRL+P"/>
+		<tool name="SpellCheck" />
+		<tool name="FindAndReplace" shortcut="CTRL+F"/>
+	</tools>
+
+</root>

@@ -1,0 +1,79 @@
+﻿<root>
+
+  <modules>
+	  <module name="RadEditorStatistics" dockingZone="Bottom" enabled="true" visible="true" dockable="true" />
+	  <module name="RadEditorDomInspector" dockingZone="Module" enabled="true" visible="true" dockable="true" />
+	  <module name="RadEditorNodeInspector" dockingZone="Module" enabled="true" visible="true" dockable="true" />
+  </modules>
+
+  <tools name="Toolbar1" dockable="true" enabled="true" dockingzone="toolbar1">
+    <tool name="Close" Text="Close Editor"/>
+    <tool name="FileSave" Text="Save the Page"/>
+    <tool name="LinkPage" shortcut="CTRL+L" Text="Link to another page"/>
+    <tool name="InsertTable" Text="Insert Table"/>
+    <tool name="ImageManager" Text="Insert and Manage Images" shortcut="CTRL+G"/>
+    <tool name="FontName"/>
+    <tool name="FontSize"/>
+    <tool name="Bold" shortcut="CTRL+B"/>
+    <tool name="Underline" shortcut="CTRL+U"/>
+    <tool name="ForeColor" />
+    <tool name="InsertPageObject" Text="Insert Page Object"/>
+    <tool name="More" Text="Show More Tools"/>
+    <tool name="Less" Text="Show Fewer Tools"/>
+  </tools>
+
+  <tools name="Toolbar2" dockable="true" enabled="true" dockingzone="toolbar2">
+    <tool name="Print" Text="Print this Page" shortcut="CTRL+P"/>
+    <tool name="AjaxSpellCheck" Text="Spell Check this page"/>
+    <tool name="FindAndReplace" Text="Find and Replace" shortcut="CTRL+F"/>
+    <tool name="GlobalSearchAndReplace" Text="Global Search and Replace"/>
+    <tool name="ImageMapDialog"/>
+    <tool name="LinkManager" shortcut="CTRL+K"/>
+    <tool name="Unlink" shortcut="CTRL+SHIFT+K"/>
+    <tool name="InsertVariable" Text="Insert Variable"/>
+    <tool name="InsertCondition" Text="Insert Conditional Content"/>
+    <tool name="StickyNote" Text="Insert Sticky Note"/>
+    <tool name="FlashManager"/>
+    <tool name="MediaManager"/>
+    <tool name="DocumentManager"/>
+    <tool name="FormatStripper" />
+    <tool Name="Cut" shortcut="CTRL+X"/>
+    <tool Name="Copy" shortcut="CTRL+C"/>
+    <tool Name="Paste" shortcut="CTRL+V"/>
+    <tool Name="PasteFromWord"/>
+    <tool Name="PasteFromWordNoFontsNoSizes"/>
+    <tool Name="PastePlainText" />
+    <tool name="PasteImage" shortcut="CTRL+Q"/>
+    <tool name="Undo" shortcut="CTRL+Z"/>
+    <tool name="Redo" shortcut="CTRL+Y"/>
+    <tool name="InsertParagraph"/>
+    <tool name="InsertSymbol"/>
+    <tool name="InsertHorizontalRule"/>
+
+  </tools>
+
+  <tools name="Toolbar3" dockable="true" enabled="true" dockingzone="toolbar3">
+    <tool name="ApplyClass" Text="Apply Style"/>
+    <tool name="FormatBlock"/>
+    <tool name="Italic" shortcut="CTRL+I"/>
+    <tool name="JustifyLeft" />
+    <tool name="JustifyCenter" />
+    <tool name="JustifyRight" />
+    <tool name="JustifyFull" />
+    <tool name="BackColor" />
+    <tool name="Indent" />
+    <tool name="Outdent" />
+    <tool name="InsertOrderedList"/>
+    <tool name="InsertUnorderedList"/>
+    <tool name="Superscript" />
+    <tool name="Subscript" />
+    <tool name="StrikeThrough" />
+    <tool name="InsertDate" />
+    <tool name="InsertTime" />
+    <tool name="StyleBuilder" />
+    <tool name="TrackChangesDialog"/>
+    <tool name="FormatCodeBlock"/>
+    <tool name="XhtmlValidator" />
+  </tools>
+
+</root>

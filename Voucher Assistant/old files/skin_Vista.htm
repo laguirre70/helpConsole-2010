@@ -1,0 +1,62 @@
+﻿<table height="100%" cellSpacing=0 cellPadding=0 width="100%" border=0>
+    <tr>
+        <td style="WIDTH: 25%; HEIGHT: 38px" background=skinimages/vista_back.gif colSpan=2>
+            <table style="WIDTH: 100%" cellSpacing=0 cellPadding=0 border=0>
+                <tr>
+
+                    <td><img id=imghome onmouseover="this.src='skinimages/vista_home_mouseover.gif'" style="CURSOR: hand" onmouseout="this.src='skinimages/vista_home.gif'" alt="" src="skinimages/vista_home.gif"></td>
+                    <td><img id=imgprint onmouseover="this.src='skinimages/vista_print_mouseover.gif'" style="CURSOR: hand" onmouseout="this.src='skinimages/vista_print.gif'" alt="" src="skinimages/vista_print.gif"></td>
+                    <td><img id=imgbrowse onmouseover="this.src='skinimages/vista_browse_mouseover.gif'" style="CURSOR: hand" onmouseout="this.src='skinimages/vista_browse.gif'" alt="" src="skinimages/Vista_browse.gif"></td>
+                    <td><img id=imgask onmouseover="this.src='skinimages/vista_ask_mouseover.gif'" style="CURSOR: hand" onmouseout="this.src='skinimages/vista_ask.gif'" alt="" src="skinimages/Vista_ask.gif" border=0></td>
+                    <td><img id=imgoptions onmouseover="this.src='skinimages/vista_options_mouseover.gif'" style="CURSOR: hand; POSITION: relative" onmouseout="this.src='skinimages/vista_options.gif'" alt="" src="skinimages/Vista_options.gif"></td>
+                    <td width=100% align="right"><font style="FONT-SIZE: 8pt; FONT-FAMILY: arial" face=arial color=white size=2>[welcome user]&nbsp;&nbsp;&nbsp;</font></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td style="HEIGHT: 35px" vAlign=center align=middle background=skinimages/vista_back.gif colSpan=2>
+            <table onmouseover="this.background='skinimages/vista_search_mouseover.gif'" style="WIDTH: 330px; HEIGHT: 26px" onclick="document.getElementById('txtsearch').style.visibility='visible';document.getElementById('imgsearch').style.visibility='visible';document.getElementById('txtsearch').focus()" onmouseout="this.background='skinimages/vista_search_back.gif'" cellSpacing=0 cellPadding=0 background=skinimages/vista_search_back.gif>
+                <tr>
+                    <td style="WIDTH: 2px"></td>
+                    <td><input id=txtsearch onblur="document.getElementById('txtsearch').style.visibility='hidden';document.getElementById('imgsearchicon').style.visibility='hidden'" style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; VISIBILITY: hidden; BORDER-LEFT: 0px; WIDTH: 100%; BORDER-BOTTOM: 0px" name=txtsearch></td>
+                    <td style="WIDTH: 25px"><img id=imgsearch style="VISIBILITY: hidden; CURSOR: hand" alt="" src="skinimages/Vista_searchicon.gif"></td>
+                    <td style="WIDTH: 2px"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td id=td_contents_hidden style="DISPLAY: none" width="25%">
+ [contents]
+        </td>
+        <td valign=top id=td_main_visible style="BORDER-RIGHT: #f7f3f7 1px solid; BORDER-TOP: #6b696b 1px solid; BORDER-LEFT: #6b696b 1px solid; BORDER-BOTTOM: #f7f3f7 1px solid" width="75%">
+            [page]
+        </td>
+    </tr>
+    <tr>
+        <td style="WIDTH: 25%; HEIGHT: 44px" vAlign=top align=left background=skinimages/vista_back.gif colSpan=2>
+            <table style="WIDTH: 100%" cellSpacing=0 cellPadding=4 border=0>
+                <tr>
+                    <td style="WIDTH: 100%"><img id=imgasksomeone onmouseover="this.src='skinimages/vista_asksomeone_mouseover.gif'" style="CURSOR: hand" onmouseout="this.src='skinimages/vista_asksomeone.gif'" alt="" src="skinimages/vista_asksomeone.gif" border=0></td>
+                    <td><img id=imgprevious onmouseover="this.src='skinimages/vista_previous_mouseover.gif'" style="CURSOR: hand" onmouseout="this.src='skinimages/vista_previous.gif'" alt="" src="skinimages/vista_previous.gif"></td>
+                    <td><img id=imgnext onmouseover="this.src='skinimages/vista_next_mouseover.gif'" style="CURSOR: hand" onmouseout="this.src='skinimages/vista_next.gif'" alt="" src="skinimages/vista_next.gif"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<table id=tbloptions style="BORDER-RIGHT: #949694 1px solid; BORDER-TOP: #949694 1px solid; DISPLAY: none; LEFT: 200px; BORDER-LEFT: #949694 1px solid; WIDTH: 198px; BORDER-BOTTOM: #949694 1px solid; POSITION: absolute; TOP: 200px; HEIGHT: 116px" cellSpacing=2 cellPadding=4 background=skinimages/vista_options_back.gif>
+<tbody>
+<tr>
+<td onmouseover="this.style.backgroundImage='url(skinimages/vista_optionslist_mouseover.gif)'" style="FONT-SIZE: 8pt; CURSOR: hand; FONT-FAMILY: arial" onclick="printpage();document.getElementById('tbloptions').style.display='none'" onmouseout="this.style.backgroundImage=''"><img height=1 src="skinimages/vista_blank.gif" width=30>Print</td></tr>
+<tr>
+<td onmouseover="this.style.backgroundImage='url(skinimages/vista_optionslist_mouseover.gif)'" style="FONT-SIZE: 8pt; CURSOR: hand; FONT-FAMILY: arial" onclick="browse();document.getElementById('tbloptions').style.display='none'" onmouseout="this.style.backgroundImage=''"><img height=1 src="skinimages/vista_blank.gif" width=30>Browse Help</td></tr>
+<tr>
+<td onmouseover="this.style.backgroundImage='url(skinimages/vista_optionslist_mouseover.gif)'" style="FONT-SIZE: 8pt; CURSOR: hand; FONT-FAMILY: arial" onclick="DisplayIndex();document.getElementById('tbloptions').style.display='none'" onmouseout="this.style.backgroundImage=''"><img height=1 src="skinimages/vista_blank.gif" width=30>Show Index</td></tr>
+<tr id=tr_showpageurl>
+<td onmouseover="this.style.backgroundImage='url(skinimages/vista_optionslist_mouseover.gif)'" style="FONT-SIZE: 8pt; CURSOR: hand; FONT-FAMILY: arial" onclick="showpageurl();document.getElementById('tbloptions').style.display='none'" onmouseout="this.style.backgroundImage=''"><img height=1 src="skinimages/vista_blank.gif" width=30>Link to this Page</td></tr>
+<tr>
+<td onmouseover="this.style.backgroundImage='url(skinimages/vista_optionslist_mouseover.gif)'" style="FONT-SIZE: 8pt; CURSOR: hand; FONT-FAMILY: arial" onclick="addtofav();document.getElementById('tbloptions').style.display='none'" onmouseout="this.style.backgroundImage=''"><img height=1 src="skinimages/vista_blank.gif" width=30>Add to Favorites</td></tr>
+</tbody></table>

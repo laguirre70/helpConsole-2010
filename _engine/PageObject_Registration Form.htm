@@ -1,0 +1,75 @@
+<br />
+<span class="conditional_start">IF USER admin</span><br />
+<table class="DatasetFind_Edit" id="tbldataset_find" style="width: 100%;" showall="true">
+    <tbody>
+        <tr>
+            <td class="DatasetFind_Fields_Edit" id="tddataset_find_fields"><img alt="" width="64" height="64" style="width: 64px; float: left; height: 64px;" src="../_engine/images/registration%20form.gif" /> <input style="width: 116px; float: right; height: 40px;" type="submit" value="Find" />&nbsp; <span class="heading">Registration Records</span><br />
+            <br />
+            <br />
+            <br />
+            <span class="fieldlabel">First Name</span><input name="find_First Name" class="fieldbox" id="find_First Name" type="text" /><br />
+            <span class="fieldlabel">Last Name</span><input name="find_Last Name" class="fieldbox" id="find_Last Name" type="text" /><br />
+            <span class="fieldlabel">Company</span><input name="find_Company" class="fieldbox" id="find_Company" type="text" /><br />
+            <span class="fieldlabel">Created by</span><input name="find__created by" class="fieldbox" id="find__created by" type="text" /><br />
+            </td>
+        </tr>
+        <tr id="trdataset_find_header">
+            <td class="DatasetFind_Header"><img alt="" width="18" height="14" style="float: left;" src="../_engine/images/dot.gif" />&nbsp;<span class="FindHeaderLabel">First Name</span><span class="FindHeaderLabel">Last Name</span><span class="FindHeaderLabel">Company</span><span class="FindHeaderLabel" style="width: 132px;">Created by</span></td>
+        </tr>
+        <tr id="trdataset_find_detail">
+            <td class="DatasetFind_Detail"><img id="imgDeleteRecord" style="width: 16px; float: left; height: 16px; cursor: pointer;" alt="Delete Record" src="../_engine/images/dataset_delete.gif" />&nbsp;<span class="FindDetailField">[open:First Name]</span><span class="FindDetailField">[open:Last Name]</span><span class="FindDetailField">[open:Company]</span><span class="FindDetailField" style="width: 133px;">[open:_created by]</span></td>
+        </tr>
+        <tr id="trdataset_find_footer">
+            <td align="right" class="DatasetFind_Footer" valign="top"><img alt="" id="imgAddDatasetRecord" style="width: 120px; height: 19px; margin-left: 13px; cursor: pointer; margin-right: 13px;" src="../_engine/images/dataset_add.gif" /></td>
+        </tr>
+    </tbody>
+</table>
+<span class="conditional_end">End</span><br />
+<table class="DatasetDetail_Edit" id="tbldataset_detail" style="width: 100%;">
+    <tbody>
+        <tr>
+            <td class="DatasetDetail_Fields_Edit" id="tddataset_detail_fields"><img alt="" style="float: left;" src="../_engine/images/registration%20form.gif" /> <span class="heading">&nbsp;Registration Form</span><br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <span class="fieldlabel"><span style="color: #ff0000;">*</span> First Name:</span><input name="First Name" class="fieldbox" id="First Name" type="text" fieldrequired="true" /><br />
+            <span class="fieldlabel"><span style="color: #ff0000;">*</span> Last Name:</span><input name="Last Name" class="fieldbox" id="Last Name" type="text" fieldrequired="true" /><br />
+            <span class="fieldlabel"><span style="color: #ff0000;">*</span> Company:</span><input name="Company" class="fieldbox" id="Company" type="text" fieldrequired="true" /><br />
+            <span class="fieldlabel">Title:</span><input name="Title" class="fieldbox" id="Title" type="text" /><br />
+            <span class="fieldlabel">Address:</span><input name="Address" class="fieldbox" id="Address" type="text" /><br />
+            <span class="fieldlabel">City:</span><input name="City" class="fieldbox" id="City" type="text" /><br />
+            <span class="fieldlabel">State:</span><input name="State" class="fieldbox" id="State" type="text" /><br />
+            <span class="fieldlabel">Zip:</span><input name="Zip" class="fieldbox" id="Zip" type="text" /><br />
+            <span class="fieldlabel">Country:</span><input name="Country" class="fieldbox" id="Country" type="text" ></select><br />
+            <span class="fieldlabel">Phone:</span><input name="Phone" class="fieldbox" id="Phone" type="text"  /><br />
+            <span class="fieldlabel">Email:</span><input name="Email" class="fieldbox" id="Email" type="text"  /><br />
+            <span class="fieldlabel" style="height: 44px;">Comments:</span><textarea name="Comments" class="fieldmemo" id="Comments" style="width: 300px; height: 75px;" rows="1"></textarea><br />
+            <input name="_created by" class="fieldbox" id="_created by" type="hidden" defaultvalue="[username]" value="[username]" /><br />
+            &nbsp;
+            <div style="text-align: center; width: 550px;"><input id="btnsave" style="width: 140px; height: 30px;" type="button" value="Submit" /><input id="btncancel" style="width: 140px; height: 30px;" type="button" value="Cancel" /></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br />
+<div style="display:none;padding-bottom: 10px; padding-left: 10px; padding-right: 10px; padding-top: 10px;border: red 1px solid; width:100%"><span style="font-size: 16px;">Collect Data with&nbsp;a Registration Form</span><br />
+This is an example of a&nbsp;'Registration Form' that can&nbsp;be added to your help system, or website&nbsp;to collect&nbsp;prospect or customer information.&nbsp;When you log in as 'Admin', you'll&nbsp;see&nbsp;a list of registration forms that have been submitted.&nbsp;Registration&nbsp;forms&nbsp;could be implemented for any of the following:<br />
+- Download a software trial<br />
+- Download a PDF manual<br />
+- Download a software patch<br />
+- Register for an upcoming seminar<br />
+- Instructor Evaluation<br />
+- Customer Survey<br />
+- Warranty Registration<br />
+<br />
+<span style="font-size: 16px;">Redirect URL<br />
+</span>You can specify&nbsp;a 'redirect URL' so that when a form is submitted, the user will be redirected to a download file, a thank you page, etc.<br />
+<br />
+<span style="font-size: 16px;">Email Notification</span><br />
+This example doesn't send any email notifications but you can configure your registration form to send an email to a predefined&nbsp;email address&nbsp;when forms are submitted<br />
+<br />
+<span style="font-size: 16px;">Fully Customizable</span><br />
+The detail form and find form are fully customizable. You can add any number of text, date, number, checkbox, memo and list fields. Fields can also be marked as required.<br />
+<br />
+</div>

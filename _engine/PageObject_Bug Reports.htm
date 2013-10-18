@@ -1,0 +1,47 @@
+<table class="DatasetFind_Edit" id="tbldataset_find" style="background-color: white;" showall="true">
+    <tbody>
+        <tr>
+            <td class="DatasetFind_Fields_Edit" id="tddataset_find_fields"><img alt="" width="64" height="64" style="width: 64px; float: left; height: 64px;" src="../_engine/images/bug reports.gif" /> <input style="width: 116px; float: right; height: 40px;" type="submit" value="Find" /><span class="heading">[page name]</span><br />
+            <br />
+            <br />
+            <br />
+            <span class="fieldlabel">Summary:</span><input name="find_summary" title="find_summary" class="fieldbox" id="find_summary" onmouseover="this.title=this.id" type="text" /><br />
+            <span class="fieldlabel">Created by</span><input name="find__created by" class="fieldbox" id="find__created by" type="text" defaultvalue="[username]" value="[conditional username]" /><br />
+            <span class="fieldlabel">Product</span><input name="find_Product" class="fieldbox" id="find_Product" type="text" /><br />
+            <span class="fieldlabel">Status</span><input name="find_Status" class="fieldbox" id="find_Status" type="text" /><br />
+            <br />
+            </td>
+        </tr>
+        <tr id="trdataset_find_header">
+            <td class="DatasetFind_Header"><img alt="" width="18" height="14" style="float: left;" src="../_engine/images/dot.gif" /> <span class="FindHeaderLabel" style="width: 228px; height: 13px;">Summary</span> <span class="FindHeaderLabel" style="width: 142px; height: 13px;">Created by</span><span class="FindHeaderLabel" style="width: 122px; height: 13px;">Product</span><span class="FindHeaderLabel" style="width: 78px; height: 13px;">Status</span></td>
+        </tr>
+        <tr id="trdataset_find_detail">
+            <td class="DatasetFind_Detail"><img id="imgDeleteRecord" style="width: 16px; float: left; height: 16px; cursor: pointer;" alt="Delete Record" src="../_engine/images/dataset_delete.gif" /> <span class="FindDetailField" style="width: 231px; height: 18px;">[open:Summary]</span> <span class="FindDetailField" style="width: 142px; height: 18px;">[open:_created by]</span><span class="FindDetailField" style="width: 122px; height: 18px;">[open:Product]</span><span class="FindDetailField" style="width: 78px; height: 18px;">[open:Status]</span></td>
+        </tr>
+        <tr id="trdataset_find_footer">
+            <td align="right" class="DatasetFind_Footer" valign="top"><img alt="" id="imgAddDatasetRecord" style="width: 120px; height: 19px; margin-left: 13px; cursor: pointer; margin-right: 13px;" src="../_engine/images/dataset_add.gif" /></td>
+        </tr>
+    </tbody>
+</table>
+<br />
+<table class="DatasetDetail_Edit" id="tbldataset_detail" style="background-color: white;" datasource="bug_reports">
+    <tbody>
+        <tr>
+            <td class="DatasetDetail_Fields_Edit" id="tddataset_detail_fields"><img alt="" style="float: left;" src="../_engine/images/bug reports.gif" />
+            <div style="float: right;"><input id="btnsave" style="width: 110px; height: 25px;" type="button" value="Save" /><br />
+            <input id="btncancel" style="width: 110px; height: 25px;" type="button" value="Cancel" /></div>
+            <span class="heading">Bug Report Detail</span><br />
+            <br />
+            <br />
+            <br />
+            <span class="fieldlabel">Summary:</span><input name="summary" title="summary" class="fieldbox" id="summary" style="width: 470px;" onmouseover="this.title=this.id" type="text" /><br />
+            <span class="fieldlabel">Status:</span><select name="Status" class="fieldlist" id="Status" style="width: 470px;"></select><br />
+            <span class="fieldlabel">Product:</span><select name="Product" class="fieldlist" id="Product" style="width: 470px;"></select><br />
+            <span class="fieldlabel">Created by</span><input name="_created by" class="fieldbox" id="_created by" style="width: 470px;" type="text" defaultvalue="[conditional username]" value="[conditional username]" /><br />
+            <span class="fieldlabel" style="width: 120px; height: 173px;">Details:</span><textarea name="Details" class="fieldmemo" id="Details" style="width: 470px; height: 175px;"></textarea><br />
+            <br />
+[file attachments]<br/>
+            </td>
+        </tr>
+    </tbody>
+</table>

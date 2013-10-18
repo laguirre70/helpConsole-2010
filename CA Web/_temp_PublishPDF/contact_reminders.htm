@@ -1,0 +1,87 @@
+﻿<html><head><link href="pagestyles.css" type="text/css" rel="stylesheet"/><link href="AppStyles.css" type="text/css" rel="stylesheet"/><script language=JavaScript type="text/javascript" src="static_page.js"></script><META HTTP-EQUIV="Cache-Control" CONTENT="no-cache"><META HTTP-EQUIV="Pragma" CONTENT="no-cache"><meta http-equiv="expires" content="FRI, 13 APR 1999 01:00:00 GMT"><META name="ROBOTS" content="NOINDEX, NOFOLLOW, NOARCHIVE"></head><body onload="HighlightSearchText();HighlightPage('28');" leftmargin=25 rightmargin=25 topmargin=20 bottommargin=20><table class="bodytable" width=100% height=100% cellspacing=0 border=0><tr><td valign="top"><script id="gwScript" type="text/javascript">                        function gwCall(method, argStr)                             
+      {                                                           
+         var gwProxy = window.document.getElementById('gwProxy'); 
+         if (gwProxy)                                             
+         {                                                        
+            gwProxy.setAttribute('gwMethod', method);             
+            gwProxy.setAttribute('gwArgStr', argStr);             
+            var e = document.createEvent('MouseEvents');          
+            e.initEvent('click',true,true);                       
+            gwProxy.dispatchEvent(e);                             
+         }                                                        
+      }                                                           
+                                                                  
+      function jsCall()                                           
+      {                                                           
+         var jsProxy = document.getElementById('jsProxy');        
+         if (jsProxy)                                             
+         {                                                        
+            var jsCode = jsProxy.getAttribute('jsCode');          
+            eval(jsCode);                                         
+         }                                                        
+      }                                                           
+                                                                  
+      function Gateway()                                          
+      {                                                           
+         var _P4r4m5_ = {};                                       
+         this.addParam = function(name,value)                     
+         {                                                        
+            _P4r4m5_[escape(name)] = escape(value);               
+         }                                                        
+                                                                  
+         this.callName = function(callName)                       
+         {                                                        
+            var paramStr = '';                                    
+            for (name in _P4r4m5_)                                
+            {                                                     
+               paramStr = paramStr+                               
+                          ((paramStr == '') ? '' : '&')+          
+                          name+'='+_P4r4m5_[name];                
+            }                                                     
+            gwCall(callName, paramStr);                           
+         }                                                        
+      }                                                           
+                                                                  
+   function showIFrame(name, url)                                 
+      {                                                           
+         frames[name].location.href = url;                        
+      }                                                           
+                                                                  
+      function createSrcScriptElement(srcPath)                    
+      {                                                           
+         var js = document.createElement('script');               
+         js.setAttribute('type', 'text/javascript');              
+         js.setAttribute('src', srcPath);                         
+         document.getElementsByTagName('head')[0].appendChild(js);
+      }                                                           
+                                                                  
+      function createInlineScriptElement(escapedJsCode)           
+      {                                                           
+         try{                                                     
+            var js;                                               
+            if(document.standardCreateElement)                    
+               js = document.standardCreateElement('script');     
+            else                                                  
+               js = document.createElement('script');             
+            js.setAttribute('type', 'text/javascript');           
+            js.text = unescape(escapedJsCode);                    
+            document.getElementsByTagName('head')[0].appendChild(js); 
+         }																			
+         catch(e){																
+            //alert(document.createElement);                        
+            //alert('ERROR: createInlineScriptElement(): '+e);      
+         }																			
+      }                                                           
+                                                                  
+      function invokeInGuiThread(callName, argPtr)                
+      {                                                           
+         var gwObj = new Gateway();                               
+         gwObj.addParam('argPtr',argPtr);                         
+         gwObj.callName(callName);                                
+      }                                                           
+</script><body id="body"><p><font class="breadcrumbs"><a href="welcome.htm" title="">Home</a>&nbsp;&gt;&nbsp;<a href="reminders1.htm" title="">Reminders</a>&nbsp;&gt;&nbsp;<a href="contact_reminders.htm" title="">Contact Reminders</a></font></p>
+    <p><font class="heading">Contact Reminders</font></p>
+    <p>Under Construction...<br>
+    <br>
+    <font class="subheading" color="#cbc9ba" face="arial" size="3">See also</font></p>
+    <div class="pagelist"><a href="reminders.htm" title="">Logbook Reminders</a><br><a href="profile_reminders.htm" title="">Profile Reminders</a><br></div><input id="gwProxy" type="hidden"><!--Session data--><input onclick="jsCall();" id="jsProxy" type="hidden"><div id="refHTML"></div></body></td></tr></table></body></html>
