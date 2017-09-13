@@ -9,7 +9,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <meta http-equiv="X-UA-Compatible" content="IE=8" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <meta name="google-site-verification" content="oiajdHnChBk66lqjXgMF32fjR_fVa5Lb3vh5hgmYfq8" /> 
     <script type="text/javascript" src="../_engine/default.js"></script>
     <script type="text/javascript" src="../_engine/editor.js"></script>
     <script type="text/javascript" src="../_engine/page.js"></script>
